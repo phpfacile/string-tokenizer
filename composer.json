@@ -1,0 +1,24 @@
+{
+    "name": "phpfacile/string-tokenizer",
+    "description": "Library to parse a string (especially to extract text and keywords identified by a begin and end delimiter and to substitute keywords by values)",
+    "license": "MIT",
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "PHPFacile\\StringTokenizer\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PHPFacileTest\\": "tests/src/"
+        }
+    },
+    "scripts": {
+        "tests": "phpunit --colors=always --configuration tests/phpunit.xml.dist --testsuite \"all tests\""
+    },
+    "scripts-descriptions": {
+        "tests": "Run tests."
+    }
+}
